@@ -1,0 +1,22 @@
+
+{
+  "manifest_version" : 2,
+  "name" : "My Journal",
+  "version" : "1.0.0",
+
+  "browser_action" : {
+    "default_popup" : "popup.html",
+    "default_icon" : "icon.png"
+  },
+
+  "icons": {
+    "128": "icon.png"
+  },
+
+  "permissions" : [
+    "storage",
+    "<all_urls>",
+    "tabs"
+  ],
+  "content_security_policy" : "script-src 'self' https://www.google.com; object-src 'self'"
+}
