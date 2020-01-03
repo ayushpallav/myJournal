@@ -3,10 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>My Journal</title>
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/popup.css" />
   </head>
-  <body style="width:300px;background-color:#E0FFF0">
-    <b align = "left" style="color:#556B2F">My Journal</b>
-    <ul id ="x"> </ul>
-    <input type="button" id="reset" value="Reset" style="float: right;"></input>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">My Journal</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#about">Help</a></li>
+        <!-- LOG OUT if already logged in otherwise nothing -->
+        <li><a href="#">Signup  <i class="fa fa-user-plus"></i></a></li>
+        <li><a href="#about">Login  <i class="fa fa-user"></i></a></li>
+      </ul>
+    </div>
+  </div>
+ </nav>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
   </body>
 </html>
